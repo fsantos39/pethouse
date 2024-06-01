@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetHouse</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="#inicio"><img id="logo" src="imagens/logopet.png" /></a>
+                <h2>PetHouse</h2>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link active">Ínicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pageCat" class="nav-link">Gato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pageDog" class="nav-link">Cachorro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio" class="p-0">
+            <div class="carousel carousel-fade slide" id="carousel-inicio" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img src="imagens/dog1.jpg" class="d-block w-100" alt="cachorro com brinquedo na boca" />
+                        <div class="carossel-caption"></div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="imagens/gato1.jpg" class="d-block w-100" alt="gato amarelo" />
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="imagens/dog2.jpg" class="d-block w-100" alt="cachorro atras da bolina" />
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div data-bs-interval="3000"  class="carousel-item">
+                        <img src="imagens/gato2.jpg" class="d-block w-100" alt="gato observando" />
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div>
+                        <button class="carousel-control-prev" data-bs-target="#carousel-inicio" data-bs-slide="prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-target="#carousel-inicio" data-bs-slide="next" type="button">
+                            <span class="carousel-control-next-icon "></span>
+                        </button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#carousel-inicio" class="active" data-bs-slide-to="0" type="button"></button>
+                        <button data-bs-target="#carousel-inicio" data-bs-slide-to="1" type="button"></button>
+                        <button data-bs-target="#carousel-inicio" data-bs-slide-to="2" type="button"></button>
+                        <button data-bs-target="#carousel-inicio" data-bs-slide-to="3" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pageCat">
+            <h2 class="mb-5">Raças de Gatos</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="imagens/scottish-fold-card1.jpg" alt="Gato da Raça Scottish Fold" />
+                        <div class="card-body">
+                            <h4 class="card-title">Gato Scottish Fold</h4>
+                            <p>
+                                Famoso em todo o mundo, o Scottish Fold ou Gato Escocês é conhecido pelas suas adoráveis orelhas caídas e olhar terno. 
+                                Famosos como Ed Sheeran e Taylor Swift decidiram ter esse felino em suas famílias.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="imagens/turkish-van-card2.jpg" alt="Gato da Raça Turkish Van" />
+                        <div class="card-body">
+                            <h4 class="card-title">Turkish Van</h4>
+                            <p>
+                                De pelagem macia e felpuda, dono de um olhar cativante e de uma personalidade muito sociável, o gato Turkish Van, 
+                                também conhecido como Van Turco, Turco Van ou até mesmo como gato Turco, é uma raça única e muito cobiçada.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="imagens/kurilian-bobtail-card3.jpg" alt="Gato da Raça Kurilian Bobtail" />
+                        <div class="card-body">
+                            <h4 class="card-title">Kurilian Bobtail</h4>
+                            <p>
+                                O gato kurilian bobtail se originou há menos de 200 anos nas ilhas Curilas russas. 
+                                Possivelmente seja um cruzamento entre gatos bobtail japonês e gatos naturais da ilha, particularmente os siberianos. 
+                                São gatos simpáticos, ativos e muito inteligentes.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pageDog">
+            <h2 class="mb-5">Raças de Cachorro</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="imagens/siberian-husky-card1.jpg" alt="Cachorro da Raça Husky Siberiano" />
+                        <div class="card-body">
+                            <h4 class="card-title">Husky Siberiano</h4>
+                            <p>
+                                Se está pensando em adotar um Husky Siberiano adulto ou filhote entrou no sítio certo.
+                                o Husky Siberiano é um excelente cão de companhia bastante popular pela sua cara bonita, corpo resistente e aparência idêntica à de um lobo. 
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="imagens/pinscher-mini-card2.jpg" alt="Cachorro da Raça Pincher Miniatura" />
+                        <div class="card-body">
+                            <h4 class="card-title">Pincher Mini</h4>
+                            <p>
+                                O pinscher miniatura é um dos mais dinâmicos e confiantes dos cães pequenos. 
+                                Este cão tem origem alemã e provém de várias cruzes de cães e embora pareça, não é o irmão mais novo do Doberman.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="imagens/golden-retriever-card3.jpg" alt="Cachorro da Raça Golden Retriever" />
+                        <div class="card-body">
+                            <h4 class="card-title">Golden Retriever</h4>
+                            <p>
+                                O Golden Retriever é originário do Reino Unido, mais concretamente da Escócia. Nasceu por volta do ano de 1850, 
+                                com a procura de um cachorro caçador que fosse capaz de não ferir a presa. Por esse motivo observamos nele habilidade de caça e rastreamento.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale Conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu Nome" required />
+                        <input type="email" placeholder="Seu Email" required />
+                        <input type="tel" placeholder="Seu Telefone (opcional)" />
+                        <textarea placeholder="Escreva sua mensagem..." required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; PetHouse - Todos os Direitos Reservados - 2024
+            </p>
+        </div>
+    </footer>
+    <script src="lib/main.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
